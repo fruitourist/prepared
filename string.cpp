@@ -2,6 +2,8 @@
 #include <string>
 #include <map>
 
+using namespace std;
+
 string lowerCase(string s) {
 	for (int i = 0; i < (int)s.length(); i++) {
 		if (s[i] >= 'A' && s[i] <= 'Z')
