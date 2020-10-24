@@ -20,11 +20,12 @@ map<char, string> morseMapAlphabet = {
 };
 
 string morse(string word) {
+	string wordMorse = "";
 	word = lowerCase(word);
 	for (int i = 0; i < (int)word.length(); i++)
-		word[i] = morseMapAlphabet[word[i]];
+		wordMorse += morseMapAlphabet[word[i]];
 	
-	return word;
+	return wordMorse;
 }
 
 int main() {
