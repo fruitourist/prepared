@@ -3,6 +3,22 @@
 
 using namespace std;
 
+string lowerCase(string s) {
+	for (int i = 0; i < (int)s.length(); i++)
+		if (s[i] >= 'A' && s[i] <= 'Z')
+			s[i] += 32;
+
+	return s;
+}
+
+string upperCase(string s) {
+	for (int i = 0; i < (int)s.length(); i++)
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+
+	return s;
+}
+
 map<char, string> morseMapAlphabet = {
 	{'a', ".-"}, {'b', "-..."}, {'c', "-.-."}, {'d', "-.."}, {'e', "."}, {'f', "..-."},
 	{'g', "--."}, {'h', "...."}, {'i', ".."}, {'j', ".---"}, {'k', "-.-"}, {'l', ".-.."},
